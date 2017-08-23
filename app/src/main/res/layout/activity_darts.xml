@@ -10,6 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -35,7 +38,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:paddingBottom="24dp"
-                android:text="0"
+                android:text="301"
                 android:textColor="#FFE0B2"
                 android:textSize="56sp" />
 
@@ -49,10 +52,11 @@
                 android:text="Point" />
 
             <EditText
+                android:id="@+id/hit_field_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Points"
-                android:inputType="text" />
+                android:inputType="number" />
 
         </LinearLayout>
 
@@ -85,7 +89,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:paddingBottom="24dp"
-                android:text="0"
+                android:text="301"
                 android:textColor="#FFE0B2"
                 android:textSize="56sp" />
 
@@ -97,6 +101,13 @@
                 android:layout_marginRight="24dp"
                 android:onClick="addPointForPlayerB"
                 android:text="Point" />
+
+            <EditText
+                android:id="@+id/hit_field_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Points"
+                android:inputType="number" />
 
         </LinearLayout>
 

@@ -2,16 +2,18 @@ package com.example.jorky.ownapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class DartsActivity extends AppCompatActivity {
 
     // Tracks the score for Player A
-    int scorePlayerA = 0;
+    int scorePlayerA = 301;
 
     // Tracks the score for Player B
-    int scorePlayerB = 0;
+    int scorePlayerB = 301;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,12 @@ public class DartsActivity extends AppCompatActivity {
      * Increase the score for Player A by 1 point.
      */
     public void addPointForPlayerA(View v) {
-        scorePlayerA = scorePlayerA + 1;
+        EditText shotAScoreField = (EditText) findViewById(R.id.hit_field_a);
+        Editable shotAScoreEditable = shotAScoreField.getText();
+        String shotAScore = shotAScoreEditable.toString();
+        int numberShotAscore = Integer.parseInt(shotAScore);
+        shotAScoreField.setText("");
+        scorePlayerA = scorePlayerA - numberShotAscore;
         displayForPlayerA(scorePlayerA);
     }
 
@@ -31,7 +38,12 @@ public class DartsActivity extends AppCompatActivity {
      * Increase the score for Player B by 1 point.
      */
     public void addPointForPlayerB(View v) {
-        scorePlayerB = scorePlayerB + 1;
+        EditText shotBScoreField = (EditText) findViewById(R.id.hit_field_b);
+        Editable shotBScoreEditable = shotBScoreField.getText();
+        String shotBScore = shotBScoreEditable.toString();
+        int numberShotBscore = Integer.parseInt(shotBScore);
+        shotBScoreField.setText("");
+        scorePlayerB = scorePlayerB - numberShotBscore;
         displayForPlayerB(scorePlayerB);
     }
 
@@ -39,8 +51,8 @@ public class DartsActivity extends AppCompatActivity {
      * Resets the score for both Players back to 0.
      */
     public void resetScore(View v) {
-        scorePlayerA = 0;
-        scorePlayerB = 0;
+        scorePlayerA = 301;
+        scorePlayerB = 301;
         displayForPlayerA(scorePlayerA);
         displayForPlayerB(scorePlayerB);
     }
