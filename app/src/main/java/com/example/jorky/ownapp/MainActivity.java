@@ -54,5 +54,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(pingpongIntent);
             }
         });
+
+        // Find the View that shows the pingpong category
+        TextView darts = (TextView) findViewById(R.id.darts);
+
+        // Set a click listener on that View
+        darts.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent dartsIntent = new Intent(MainActivity.this, DartsActivity.class);
+                startActivity(dartsIntent);
+            }
+        });
     }
 }

@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 public class PingpongActivity extends AppCompatActivity {
 
-
     // Tracks the score for Player A
     int scorePlayerA = 0;
 
