@@ -15,10 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasketballActivity" />
-        <activity android:name=".FootballActivity" />
-        <activity android:name=".PingpongActivity" />
-        <activity android:name=".DartsActivity"></activity>
+        <activity
+            android:name=".BasketballActivity"
+            android:label="Basketball" />
+        <activity
+            android:name=".FootballActivity"
+            android:label="Football" />
+        <activity
+            android:name=".PingpongActivity"
+            android:label="Ping-Pong" />
+        <activity
+            android:name=".DartsActivity"
+            android:label="Darts"></activity>
     </application>
 
 </manifest>

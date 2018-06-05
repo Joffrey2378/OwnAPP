@@ -7,32 +7,112 @@
     android:orientation="vertical"
     tools:context="com.example.jorky.ownapp.MainActivity">
 
-    <TextView
-        android:id="@+id/basketball"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Basketball" />
+    <LinearLayout
 
-    <TextView
-        android:id="@+id/football"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Football" />
+        android:background="@color/tan_background"
+        android:minHeight="@dimen/list_item_height"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/pingpong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Ping-Pong" />
+        <TextView
+            android:id="@+id/basketball"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FB8C00"
+            android:gravity="center"
+            android:text="Basketball"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/darts"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@drawable/basketball_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Darts" />
+        android:background="@color/tan_background"
+        android:minHeight="@dimen/list_item_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/football"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8BC34A"
+            android:gravity="center"
+            android:text="Football"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@drawable/football_icon1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tan_background"
+        android:minHeight="@dimen/list_item_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pingpong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0288D1"
+            android:gravity="center"
+            android:text="Ping-Pong"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@drawable/pingpong_icon1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tan_background"
+        android:minHeight="@dimen/list_item_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/darts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F44336"
+            android:gravity="center"
+            android:text="Darts"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@drawable/darts_icon" />
+
+    </LinearLayout>
 
 </LinearLayout>
